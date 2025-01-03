@@ -18,19 +18,21 @@ def is_enabled(value, default):
         return default
 
 #main variables
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
+API_ID = int(environ.get('API_ID', '21478717'))
+API_HASH = environ.get('API_HASH', '8f8629885b7fd647e3a5006fb27c38d6')
 BOT_TOKEN = environ.get('BOT_TOKEN', '')
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
-USERNAME = environ.get('USERNAME', 'https://telegram.me/TechifyGuru')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_URI2 = environ.get('DATABASE_URI2', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Rahul")
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1807895968').split()]
+USERNAME = environ.get('USERNAME', 'https://t.me/tosik90799')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002339275614'))
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002152775108').split()]
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://tosiksaini:
+FsibH4HOJCN07N9t@cluster0.notst.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://tosiksaini:
+FsibH4HOJCN07N9t@cluster0.notst.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_NAME = environ.get('DATABASE_NAME', "mongoDB")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Rahul')
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', ''))
-QR_CODE = environ.get('QR_CODE', 'https://envs.sh/wam.jpg')
+QR_CODE = environ.get('QR_CODE', '')
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 
 #this vars is for when heroku or koyeb acc get banned, then change this vars as your file to link bot name
@@ -39,13 +41,13 @@ URL = environ.get('URL', '')
 
 # verify system vars
 IS_VERIFY = is_enabled('IS_VERIFY', True)
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', ''))
-TUTORIAL = environ.get("TUTORIAL", "https://youtu.be/0c-i2Lol6LU")
-TUTORIAL2 = environ.get("TUTORIAL2", "https://youtu.be/GdaUbzxDTKs")
-TUTORIAL3 = environ.get("TUTORIAL3", "https://youtu.be/rddlpYLm0G0")
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002339275614'))
+TUTORIAL = environ.get("TUTORIAL", "https://t.me/how_to_watch_link_and_downlod/41")
+TUTORIAL2 = environ.get("TUTORIAL2", "https://t.me/how_to_watch_link_and_downlod/41")
+TUTORIAL3 = environ.get("TUTORIAL3", "https://t.me/how_to_watch_link_and_downlod/41")
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/45a270fc6a0a1c183c614.jpg")
-SHORTENER_API = environ.get("SHORTENER_API", "8c09653e5c38f84d1b76ad3197c5a023e53b494d")
-SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "onepagelink.in")
+SHORTENER_API = environ.get("SHORTENER_API", "6dda1b9bba4ce7c6265a359caa2b30a1018d427a")
+SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "gplinks.com")
 SHORTENER_API2 = environ.get("SHORTENER_API2", "0c8ebd63bfe9f67f9970b8767498ff60316b9b03")
 SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "tnshort.net")
 SHORTENER_API3 = environ.get("SHORTENER_API3", "9c5a6c96077a1b499d8f953331221159383eb434")
