@@ -41,7 +41,7 @@ class Bot(Client):
         print(f"{me.first_name} is started now ❤️")
         tz = pytz.timezone('Asia/Kolkata')
         today = date.today()
-        now = datetime.datetime.now(tz)
+        now = datetime.now(tz)
         timee = now.strftime("%H:%M:%S %p") 
         app = web.AppRunner(await web_server())
         await app.setup()
